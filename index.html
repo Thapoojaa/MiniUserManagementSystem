@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Management System</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>User Management Dashboard</h1>
+
+    <section class="form-section glass">
+      <form id="userForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="url" id="imageUrl" placeholder="Image URL" required />
+        <button type="submit">Add User</button>
+        
+    <div style="text-align: center; margin-top: 1rem;">
+    <button id="fetchUserBtn" class="fetch-btn">Fetch Random User</button>
+    </div>
+  
+      </form>
+    </section>
+
+    <section id="userList" class="user-list"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
